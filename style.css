@@ -42,6 +42,7 @@ header{
 .container-box{
   max-width: 1200px;
   width: 100%;
+  margin: 0 auto;
 }
 .presentacion{
 background-image: url('imagenes/Designer.jpeg');
@@ -135,6 +136,7 @@ position: relative;
   font-size: 16px;
   margin: 20px auto;
   line-height: 1.5;
+  text-align: center;
 }
 
 .contactenos__texto{
@@ -144,7 +146,7 @@ position: relative;
   width: 80%;
 }
 .contactenos__formulario{
-  width: 20%;
+  width: 25%;
   margin: 0 auto;
 }
 
