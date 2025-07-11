@@ -61,7 +61,7 @@ position: relative;
   text-transform: uppercase;
 }
 .presentacion__titulo--primary{
-  filter: drop-shadow(1px 1px 2px white);
+  filter: drop-shadow(1px 1px 2px rgba(255, 255, 255, 0.719));
 }
 
 .presentacion__texto{
@@ -95,7 +95,7 @@ position: relative;
   font-size: 2rem;
   border-bottom: 1px solid rgb(68, 67, 67);
   width: 50%;
-  margin: 30px auto;
+  margin: 40px auto;
   text-align: center;
   color: rgb(88, 88, 88);
   text-transform: uppercase;
