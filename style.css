@@ -44,7 +44,7 @@ header{
   width: 100%;
 }
 .presentacion{
-background-image: url('imagenes/encabezado.jpeg');
+background-image: url('imagenes/Designer.jpeg');
 background-size: contain;
 height: 500px;
 background-position: center;
@@ -53,28 +53,27 @@ position: relative;
 .presentacion__info{
   position: absolute;
   top: 50%;
-  left: 20%;
   text-align: center;
 }
 .presentacion__titulo{
   font-size: 3rem;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   text-transform: uppercase;
 }
 .presentacion__titulo--primary{
-  filter: drop-shadow(2px 2px 4px white);
+  filter: drop-shadow(1px 1px 2px white);
 }
 
 .presentacion__texto{
   font-size: 1.2rem;
   margin-bottom: 20px;
+  color: rgb(253, 253, 253);
 }
 
 .presentacion__boton{
-  background-color: beige;
-  color: black;
-  border: rgb(206, 198, 183) 1px solid;
-  border-radius: 10px;
+  background-color: transparent;
+  color: rgb(29, 28, 28);
+  border: rgb(148, 120, 69) 2px solid;
   padding: 10px;
   font-size: 1rem;
   font-weight: bold;
