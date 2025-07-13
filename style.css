@@ -18,15 +18,15 @@ header{
   width: 100%;
 }
 
+.navegacion{
+  padding-bottom: 10px;
+}
+
 .navegacion__img{
   width: 240px;
   height: 60px;
   display: block;
   margin: 5px auto;
-}
-
-.navegacion{
-  padding-bottom: 10px;
 }
 
 .navegacion__item{
@@ -35,7 +35,7 @@ header{
   margin-left: 17%;
 }
 
-.navegacion__item--activo{
+.navegacion__item--primary{
   margin-left: 10%;
 }
 
@@ -58,7 +58,7 @@ position: relative;
 }
 .presentacion__titulo{
   font-size: 3rem;
-  margin-bottom: 40px;
+  margin: 30px;
   text-transform: uppercase;
 }
 .presentacion__titulo--primary{
@@ -78,7 +78,15 @@ position: relative;
   padding: 10px;
   font-size: 1rem;
   font-weight: bold;
+  transition: 1s;
 }
+
+.presentacion__boton--focus:hover{
+  background-color: rgb(148, 120, 69);
+  color: white;
+  transition: 1s;
+}
+
 .container_productos{
   text-align: center;
 }
@@ -128,6 +136,10 @@ position: relative;
   margin-top: 10px;
 }
 
+.target__boton--focus:focus{
+  background-color: rgb(151, 105, 19);
+  transition: 1s;
+}
 .nosotros{
   padding: 10px;
 }
@@ -173,31 +185,52 @@ position: relative;
   border-radius: 10px;
   font-size: 18px;
 }
-
+.formulario__input--distinto{
+  height: 100px;
+}
 .formulario__boton--active:active{
   background-color: darkred;
   color: aliceblue;
 }
-footer{
+.footer{
   background-color: black;
-}
-
-footer li{
-  display: inline-block;
-  font-size: 20px;
-  margin-left: 20px;
-  color:white;
-  margin-bottom: 20px;
-  text-transform: uppercase;}
-
-.redes{
+  padding: 20px;
   position: relative;
-  padding: 20px 0 0 0;
+  width: 100% ;
 }
 
-.redes-icono{
-  position:absolute;       
+.footer__informacion{
+  text-align: left;
+}
+
+.footer__logo{
+  width: 150px;
+  height: 35px;
+  display: inline-block;
+}
+
+.footer__texto{
+  margin: 5px 0;
+  color: white;
+}
+
+.footer__redes{
+  position: absolute;
   right: 20px;
-  bottom: 2px;
+  top: 40px;
 }
 
+.footer__redes-item{
+  font-size: 32px;
+  color: white;
+}
+
+.footer__bottom{
+  text-align: center;
+  color: white;
+}
+
+.footer__bottom-legal{
+  font-size: 14px;
+  color: darkred;
+}

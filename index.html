@@ -14,7 +14,7 @@
       <img src="imagenes/logo.png" alt="logo" class="navegacion__img">                                           
     </div>
     <nav class="navegacion">
-      <a href="#inicio" class="navegacion__item navegacion__item--activo">Inicio</a>
+      <a href="#inicio" class="navegacion__item navegacion__item--primary">Inicio</a>
       <a href="#comprar" class="navegacion__item">Comprar</a>
       <a href="#nosotros" class="navegacion__item">Nosotros</a>
       <a href="#contactenos" class="navegacion__item">Contactenos</a>
@@ -24,9 +24,9 @@
     <div class="presentacion" id="inicio">      
       <div class="presentacion__imagen"></div>
       <div class="presentacion__info">
-        <h1 class="presentacion__titulo presentacion__titulo--primary">Cuando el cuerpo no viste moda, sino memoria.</h1>
+        <h1 class="presentacion__titulo presentacion__titulo--primary">El cuerpo no viste moda, sino memoria.</h1>
         <p class="presentacion__texto">Alta costura que respeta el tiempo, el gesto y el silencio.</p>
-        <button class="presentacion__boton">Descubrir</button> 
+        <button class="presentacion__boton presentacion__boton--hover">Descubrir</button> 
       </div>              
     </div>
     <section id="comprar" class="seccion">   
@@ -36,37 +36,37 @@
           <img src="imagenes/vestidoNegro.jpeg" alt="vestidoNegro" class="target__img">
           <p class="target__nombre">Doll</p>
           <p class="target__precio">$99999</p>
-          <button class="target__boton">Comprar</button>
+          <button class="target__boton target__boton--focus">Comprar</button>
         </div>
         <div class="target">                                                                 
           <img src="imagenes/casual.jpeg" alt="casual" class="target__img">
           <p class="target__nombre">Summer</p>
           <p class="target__precio">$999999</p>
-          <button class="target__boton">Comprar</button>
+          <button class="target__boton target__boton--focus">Comprar</button>
         </div>
         <div class="target">
           <img src="imagenes/casualmedio.jpeg" alt="casualtoo" class="target__img">
           <p class="target__nombre">Library</p>
           <p class="target__precio">$99999</p>
-          <button class="target__boton">Comprar</button>
+          <button class="target__boton target__boton--focus">Comprar</button>
         </div>
         <div class="target">
           <img src="imagenes/presentacion.jpeg" alt="suit"" class="target__img">
           <p class="target__nombre">Flawless</p>
           <p class="target__precio">$99999</p>
-          <button class="target__boton">Comprar</button>
+          <button class="target__boton target__boton--focus">Comprar</button>
         </div>
         <div class="target">
           <img src="imagenes/vestidoyperlas.jpeg" alt="vestidoelegante" class="target__img">
           <p class="target__nombre">Grace</p>
           <p class="target__precio">$99999</p>
-          <button class="target__boton">Comprar</button>
+          <button class="target__boton target__boton--focus">Comprar</button>
         </div>
         <div class="target">
           <img src="imagenes/elegante.jpeg" alt="premium" class="target__img">
           <p class="target__nombre">Majestic</p>
           <p class="target__precio">$99999</p>
-          <button class="target__boton">Comprar</button>
+          <button class="target__boton target__boton--focus">Comprar</button>
         </div>
       </div>
     </section>
@@ -88,21 +88,30 @@
         </div>
         <div class="formulario_item">
           <label for="text" class="formulario__label">Mensaje:</label>
-          <input type="text" id="text" class="formulario__input" placeholder="Ingrese su consulta">
+          <input type="text" id="text" class="formulario__input formulario__input--distinto" placeholder="Ingrese su consulta">
         </div>
         <button class="formulario__boton formulario__boton--active">Enviar</button>
       </form>
     </section>
   </main>
-  <footer> 
-    <ul class="redes">
-      <li class="savxy"><p class="redes_titulo">xarelle 2025</p></li>
-      <span class="redes-icono">
-        <li class="icon"><i class="fa-brands fa-square-facebook icono"></i></li>
-        <li class="icon"><i class="fa-brands fa-square-x-twitter icono"></i></li>
-        <li class="icon"><i class="fa-brands fa-instagram icono"></i></li>
-      </span>
-    </ul>
+  <footer class="footer"> 
+    <div class="footer__informacion">
+      <img src="imagenes/logo.png" alt="Logo de la empresa" class="footer__logo">
+      <div class="footer__contacto">
+        <p class="footer__texto">Email: contacto@empresa.com</p>
+        <p class="footer__texto">Tel: +57 123 456 7890</p>
+      </div>
+    </div>
+    <div class="footer__redes">
+      <a class="footer__redes-item" href="#"><i class="fa-brands fa-facebook footer__icon"></i></a>
+      <a class="footer__redes-item" href="#"><i class="fa-brands fa-x-twitter footer__icon"></i></a>
+      <a class="footer__redes-item" href="#"><i class="fa-brands fa-instagram footer__icon"></i></a>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__bottom-copy"> 2025 Empresa. Todos los derechos reservados.</p>
+      <a href="#" class="footer__bottom-legal">Política de privacidad</a>
+      <a href="#" class="footer__bottom-legal">Términos y condiciones</a>
+    </div>
   </footer>
 </body>
 </html>
