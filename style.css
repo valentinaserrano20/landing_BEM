@@ -1,15 +1,18 @@
+/* importamos la fuente de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+
+/*reseteamos los estilos que el navegador trae por defecto*/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/*aqui referenciamos la fuente de Google Fonts y le damos un color de fondo a la pagina*/
 body{
   font-family: 'Domine', serif;
   background-color: #f0f0f0;
 }
-
+/*aqui damos estilos al header, que contiene la navegacion, en este caso pusimos la navegacion fija y su color es negro, tambien se le dio una capa mas adelante con el z index y se pego a la parte superior de la pagina*/
 header{
   background-color: black;
   position: fixed;
@@ -17,33 +20,34 @@ header{
   top: 0;
   width: 100%;
 }
-
+/*aqui le damos estilo al bloque de navegacion dandole un espacio interno abajo */
 .navegacion{
   padding-bottom: 10px;
 }
-
+/* aqui le damos estilo a la imagen del logo en el footer, agregando un ancho y alto especifico y dandole un dispplay para que este sea el unico en linea tambien lo centramos con margenes*/
 .navegacion__img{
   width: 240px;
   height: 60px;
   display: block;
   margin: 5px auto;
 }
-
+/* aqui le damos estilo a los elementos de la navegacion, como son links le quitamos el subrayado y le damos un color blanco, tambien los separamos hacia la izquierda*/
 .navegacion__item{
   text-decoration: none;
   color: white;
   margin-left: 17%;
 }
-
+/* este es un modificador del elemento de navegacion, que se utiliza para que el primer elemento tenga un margen diferente */
 .navegacion__item--primary{
   margin-left: 10%;
 }
-
+/* aqui centramos el contenedor principal, para que este tenga un maximo ancho y su contenido este centrado */
 .container-box{
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
+/* este es el bloque de presentacion, que contiene la imagen de fondo y su alineacion, como que esta va a contener nuestro ancho dado anteriormente en el contenedor principal, tambien le damos una posicion relativa para que contenga los demas elementos que seran absolute*/
 .presentacion{
 background-image: url('imagenes/Designer.jpeg');
 background-size: contain;
@@ -51,11 +55,13 @@ height: 500px;
 background-position: center;
 position: relative;
 }
+/* este es el elemento de la presentacion el cual incluye la informacion y le damos nuestro absolute para mover su contennido, dentro del eleemnto que definimos como relative y que esto este centrado*/
 .presentacion__info{
   position: absolute;
   top: 50%;
   text-align: center;
 }
+/* este es el titulo de la presentacion, que le damos un tamaño de fuente grande y un margen para que este centrado, ademas le damos un modificador para que tenga un filtro de sombra y lo ponemos en mayuscula*/
 .presentacion__titulo{
   font-size: 3rem;
   margin: 30px;
@@ -64,13 +70,13 @@ position: relative;
 .presentacion__titulo--primary{
   filter: drop-shadow(1px 1px 2px rgba(255, 255, 255, 0.719));
 }
-
+/*aqui estara el texto que introduce a la coleccion, a este se le da un font size mas pequeño que el titulo y un color*/
 .presentacion__texto{
   font-size: 1.2rem;
   margin-bottom: 20px;
   color: rgb(253, 253, 253);
 }
-
+/* aqui estara el boton de la presentacion, que le damos un fondo transparente, un color de texto y un borde para luego con un modificador cambiar su estilo y darle un fondo*/
 .presentacion__boton{
   background-color: transparent;
   color: rgb(29, 28, 28);
@@ -81,15 +87,16 @@ position: relative;
   transition: 1s;
 }
 
-.presentacion__boton--focus:hover{
+.presentacion__boton:hover{
   background-color: rgb(148, 120, 69);
   color: white;
   transition: 1s;
 }
-
+/* aqui estara el contenedor de los productos, que centrara su contenido */
 .container_productos{
   text-align: center;
 }
+/* aqui estara el bloque de productos el cual tomamos como inline block para que por la pantalla de defecto, se agrupen 3 tarjetas en una linea, tambien le damos un borde y un margin superior y inferior */
 .target{
   display: inline-block;
   width: 330px;
@@ -99,7 +106,7 @@ position: relative;
   margin-left: 5px;
   padding: 10px;
 }
-
+/*este es un elemento que se recicla en cada seccion como titulo el cual como diferenciador lo hace su borde abajo,   que este centrado y que su ancho sea igual al de su borde, tambien lo ponemos en mayuscula*/
 .seccion__titulo{
   font-size: 2rem;
   border-bottom: 1px solid rgb(68, 67, 67);
@@ -109,22 +116,25 @@ position: relative;
   color: rgb(88, 88, 88);
   text-transform: uppercase;
 }
-
+/* este es la imagen dentro de la tarjeta, a esta le damos un tamaño mas pequieño que la tarjeta y le damos un borde redondeado */
 .target__img{
   width: 300px;
   height: 350px;
   border-radius: 10px;
 }
+/* este es el texto dentro de la tarjeta, que le damos un tamaño de fuente y un color y le agregamos que este sea negrilla*/
 .target__nombre{
   font-size: 1.3rem;
   font-weight: bold;
   margin-top: 10px;
 }
+/* este es el precio dentro de la tarjeta, que le damos un tamaño de fuente y un color, ademas de un margen superior para que este separado del nombre */
 .target__precio{
   font-size: 1.1rem;
   color: rgb(119, 78, 32);
   margin-top:5px;
 }
+/* este es el texto dentro de la tarjeta, que le damos un tamaño de fuente y un color, ademas de un margen superior para que este separado del precio, le damos un borde y un espacio interno */
 .target__boton{
   background-color: rgb(163, 149, 101);
   color: #fff;
@@ -135,36 +145,39 @@ position: relative;
   font-weight: bold;
   margin-top: 10px;
 }
-
+/* este es un modificador del boton de la tarjeta, que cambia su color de fondo al pasar el mouse por encima */
 .target__boton--focus:focus{
   background-color: rgb(151, 105, 19);
   transition: 1s;
 }
+/* este es el bloque de nosotros, que contiene la historia de la empresa, le damos un padding para que tenga espacio interno */
 .nosotros{
   padding: 10px;
 }
-
+/* este es el texto dentro de la seccion de nosotros, que le damos un tamaño de fuente y un margen para que este centrado, ademas de un espacio entre lineas, tambien lo centramos*/
 .nosotros__texto{
   font-size: 16px;
   margin: 20px auto;
   line-height: 1.5;
   text-align: center;
 }
-
+/* este es el texto dentro de la seccion de contacto, que le damos un tamaño de fuente y un margen para que este centrado, ademas de un espacio entre lineas, tambien lo centramos*/
 .contactenos__texto{
   font-size: 14px;
   margin: 20px auto;
   line-height: 1.5;
   width: 80%;
 }
+/* este es el formulario de contacto, que le damos un ancho del 25% y un margen para que este centrado */
 .contactenos__formulario{
   width: 25%;
   margin: 0 auto;
 }
-
+/* estos son los elementos del formulario los cuales les damos un margen global de 10px*/
 .formulario_item{
   margin: 10px;
 }
+/*estas son las entradas del formulario las cuales le damos un espacio interno y los ponemos en bloque para que quede mas estetico, tambien los redondeamos */
 .formulario__input{
   border: 1px solid lightgray;
   padding: 10px;
@@ -173,7 +186,7 @@ position: relative;
   width: 300px;
   margin-top: 10px;
 }
-
+/* este es el boton de enviar del formulario el cual primeramente tiene un espacio interno y luego lo ponemos en negrilla, le damos unos margenes arriba y abajo, le cambiamos el color de fondo, su color de letra y agregfamos un borde y lo redondeamos */
 .formulario__boton {
   padding:5px;
   font-weight: bold;
@@ -185,51 +198,60 @@ position: relative;
   border-radius: 10px;
   font-size: 18px;
 }
+/* este es un modificador del boton de enviar del formulario, que cambia su altura para que este se vea mejor */
 .formulario__input--distinto{
   height: 100px;
 }
-.formulario__boton--active:active{
+/* este es un modificador del boton de enviar del formulario, que cambia su color de fondo y su color de letra */
+.formulario__boton--active:active{ 
   background-color: darkred;
   color: aliceblue;
 }
+/* este es el bloque del footer, que contiene la informacion de la empresa, le damos un padding para que tenga espacio interno , un color de fondo negro y le ponemos una posicion relativa para que contenga a los absolutos.*/
 .footer{
   background-color: black;
   padding: 20px;
   position: relative;
   width: 100% ;
 }
-
+/* este es el elemento que contiene la informacion de la empresa y lo alineamos a la izquierda */
 .footer__informacion{
   text-align: left;
 }
-
+/* este es el logo de la empresa, que tiene un tamaño fijo y esta en linea y bloque al mismo tiempo */
 .footer__logo{
   width: 150px;
   height: 35px;
   display: inline-block;
 }
-
+/* este es el texto dentro del footer, que le damos un margen y un color blanco */
 .footer__texto{
   margin: 5px 0;
   color: white;
 }
-
+/* este es el contenedor de los iconos de redes sociales, que los posicionamos en la esquina superior derecha con su absolute*/
 .footer__redes{
   position: absolute;
   right: 20px;
   top: 40px;
 }
-
+/* estos son los elementos dentro del contenedor de redes sociales, que les damos un tamaño de fuente y un color blanco */
 .footer__redes-item{
   font-size: 32px;
   color: white;
 }
+/*estos son los iconos dentro del contenedor de redes sociales, que les damos un tamaño de fuente y un color blanco */
+.footer__icon{
+  font-size: 24px;
+  color: white;
+}
 
+/* este es el elemento que contiene la informacion de derechos reservados y los enlaces legales, que lo centramos y le damos un color blanco */
 .footer__bottom{
   text-align: center;
   color: white;
 }
-
+/* este elemento contiene los links legales */
 .footer__bottom-legal{
   font-size: 14px;
   color: darkred;
